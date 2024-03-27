@@ -1,0 +1,54 @@
+INTERFACE
+
+Customer Registration:
+	Methods Involved:
+	CustomerRegistration() #takes the new customer details
+
+Product Catalog Management:
+	Methods Involved:
+	UpdateProductInfo() #takes the product id or name and changes its details.
+	ShowAllProducts() #shows all the products in the product catalog
+	IsProductInStock() #shows whether the given product is in stock
+	
+Orders:
+	Methods Involved:
+	CreateOrder() #creates an order and takes customer id and product id too.
+		      #also updates product quantities in inventory and calculate order 
+		      #totals. Then update in order details table too.
+	GetOrderDetails() #Gets the details of the orders
+	CalculateTotalOrders() # placed by a customer
+	CancelOrder() #Cancel the order from the order table and order details table
+
+Order Status:
+	Methods Involved:
+	OrderStatus() #Display the order detail and status(shipped/pending)
+	UpdateOrderStatus() #Update status
+	
+Inventory Management:
+	Methods Involved:
+	AddNewProduct() #adds a new product record to the catalog
+	UpdateProductStock() #updates quantity in stock
+	RemoveDiscontinuedItems() #remove discontinued items specified by admin
+
+Sales Report:
+	Methods Involved:
+	RetrieveSalesData() #Retrieves sales/orders data
+	GenerateReports() #ask chatgpt about specific criteria and generate report
+
+Customer Account Update:
+	Methods Involved:
+	UpdateCustomerDetails() #changing email, address, phone number
+	GetCustomerDetails() # Displays customer details
+
+Payment Processing:
+	Methods Involved:
+	ProcessPayment() #Just gives the payment details(orderID, productID, quantity, 				 # totalamount
+	AddDiscount() #Adds discount and displays updated info about the order detail
+
+Product Search and Recommendation:
+	Methods Involved:
+	SearchProduct() # name or category give and get details of the product
+	RecommendProduct() # Give recommendations of the same category user bought wich are 			   # electronics
+
+	
+	
